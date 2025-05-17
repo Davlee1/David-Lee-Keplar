@@ -4,7 +4,15 @@ html {
     background: hsl(254, 45%, 11%);
     color: hsl(255 51.7% 94.5%);
     font-family: "K2D", sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-y: scroll;
+    padding: 0px;
+    margin: 0px;
+}
 
+#About,#Experience,#Skills,#Projects,#Connect{
+  scroll-margin-top: 85px;
 }
 
 p {
@@ -13,13 +21,7 @@ p {
 }
 
 body {
-    z-index: 1;
-    margin: auto;
-    width: 60%;
-    background: hsla(255, 60%, 57%, 0.364);
-    border-radius: 20px;
-    
-
+    margin: 0px;
 }
 
 a {
@@ -30,17 +32,40 @@ ul {
     list-style-type: none;
 }
 
-h1 {
+#navbar {
+    display: flex;
     text-align: center;
-    font-family: "Cal Sans", sans-serif;
+    position: fixed;
+    top: 0px;
     color: hsl(255 51.7% 94.5%);
     font-weight: 100;
     font-size: 45px;
-    background: hsl(255 51.7% 57.9%);
-    padding: 5px 20px 0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    background: hsla(249, 40%, 47%, 1);
+    padding: 10px 20px 20px;
     margin: 0px;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.navlink {
+    line-height: 50px;
+    font-size: 33px;
+    text-decoration: none;
+    color: hsl(255 51.7% 94.5%);
+    padding: 0px 10px 0px 120px;
+    transition: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out 50ms;
+}
+
+
+h1 {
+    text-align: center;
+    color: hsl(255 51.7% 94.5%);
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0px;
+
 }
 
 h2 {
@@ -49,38 +74,56 @@ h2 {
     font-weight: 300;
     font-size: 33px;
     margin: 0px;
-    
 }
-h3{
+
+h3 {
     font-weight: 200;
     font-size: 25px;
-    margin:0px;
+    margin: 0px;
     text-align: center;
     padding-bottom: .5vw;
 
 }
 
 #About {
-    padding: 10px 50px 0px;
+    padding: 10px 50px 10px;
     font-size: 19px;
     align-content: center;
+    margin: 85px auto 0px;
+    width: 65%;
+    background: hsla(255, 60%, 57%, 0.364);
+    border-radius: 20px 20px 0px 0px;
 }
 
 
 #Experience {
-    margin:0px;
-    width: 100%;
+
     font-size: 20px;
-    border-radius: 10px;
-    align-content: center; 
+    align-content: center;
+    margin: auto;
+    width: 65%;
+    padding: 10px 50px 10px;
+    background: hsla(255, 60%, 57%, 0.364);
+
 }
 
 #Skills {
     margin: auto;
-    width: 100%;
+    width: 65%;
+    padding: 10px 50px 0px;
+    background: hsla(255, 60%, 57%, 0.364);
     font-size: 20px;
-    border-radius: 10px;
-    align-content: center; 
+    align-content: center;
+}
+
+#Projects {
+    margin: auto;
+    width: 65%;
+    padding: 10px 50px 0px;
+    font-size: 20px;
+    align-content: center;
+    background: hsla(255, 60%, 57%, 0.364);
+    border-radius: 0px 0px 20px 20px;
 }
 
 #Connect {
@@ -89,8 +132,10 @@ h3{
     align-content: center;
 }
 
-.About-content{
+.About-content {
     text-indent: 70px;
+    width: 68%;
+    margin: auto;
 }
 
 .connect-container {
@@ -98,33 +143,53 @@ h3{
     grid-template-columns: auto auto;
     padding: 10px 50px 0px;
     margin: auto;
-    width:50%;
+    width: 50%;
 }
 
 .connect-block {
     padding: 20px;
+    margin: auto;
+    align-content: center;
 }
 
 .experience-container {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     text-align: center;
     padding: 10px 50px 0px;
     margin: auto;
-    width:70%;
+    width: 70%;
 }
 
 .experience-block {
-    background: hsl(255 51.7% 57.9%);
+    background: hsla(249, 40%, 47%, .8);
     padding: 10px 40px 10px;
     margin: 10px;
-    
     border-radius: 5px;
     text-align: justify;
     font-size: 20px;
     font-weight: 100;
     text-indent: 0px;
-    
+}
+
+.Projects-container {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    padding: 10px 50px 0px;
+    margin: auto;
+    width: 70%;
+}
+
+.Projects-block {
+    background: hsla(249, 40%, 47%, .8);
+    padding: 10px 40px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+    text-indent: 0px;
 }
 
 .skills-container {
@@ -134,16 +199,16 @@ h3{
     width: 50%;
     padding: 10px 50px 0px;
     margin: auto;
-    width:50%;
+    width: 50%;
 }
 
 .skills-block {
-    background: hsl(255 51.7% 57.9%);
+    background: hsla(249, 40%, 47%, .8);
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
     text-align: center;
-    
+
 }
 
 .blurred-item-1 {
