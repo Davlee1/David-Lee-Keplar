@@ -11,8 +11,12 @@ html {
     margin: 0px;
 }
 
-#About,#Experience,#Skills,#Projects,#Connect{
-  scroll-margin-top: 85px;
+#About,
+#Experience,
+#Skills,
+#Projects,
+#Connect {
+    scroll-margin-top: 85px;
 }
 
 p {
@@ -65,7 +69,6 @@ h1 {
     font-weight: 400;
     font-size: 40px;
     margin: 0px;
-
 }
 
 h2 {
@@ -199,7 +202,6 @@ h3 {
     width: 50%;
     padding: 10px 50px 0px;
     margin: auto;
-    width: 50%;
 }
 
 .skills-block {
@@ -211,6 +213,7 @@ h3 {
 
 }
 
+/*foreground items*/
 .blurred-item-1 {
     z-index: -1;
     position: fixed;
@@ -231,4 +234,95 @@ h3 {
     width: 500px;
     height: 500px;
     filter: blur(250px);
+}
+
+/*mobile adjustments*/
+
+@media only screen and (max-width: 490px) {
+    #navbar {
+        font-size: 20px;
+        padding: 0px 20px 0px;
+    }
+
+    h1 {
+        text-align: center;
+        color: hsl(255 51.7% 94.5%);
+        font-weight: 400;
+        font-size: 35px;
+        margin: 0px;
+    }
+
+    .navlink {
+        font-size: 30px;
+        max-width: 0px;
+
+    }
+
+    #About,
+    #Experience,
+    #Skills,
+    #Projects,
+    #Connect {
+        scroll-margin-top: 90px;
+        width: 90%;
+        padding: 0px auto;
+    }
+
+    #About {
+        margin: 85px auto 0px;
+        width: 90%;
+        padding: 10px 50px 10px;
+    }
+
+    .About-content {
+        text-indent: 70px;
+        width: 100%;
+        margin: auto;
+        padding: 0px 0px 0px;
+    }
+
+    #Experience {
+        padding: 0px;
+    }
+
+    .experience-container {
+        padding: 0px 0px 0px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .experience-block {
+        background: hsla(249, 40%, 47%, .8);
+        padding: 10px 20px 10px;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 100;
+        text-indent: 0px;
+    }
+
+
+    /*foreground adjustments*/
+    .blurred-item-1 {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: hsla(301, 100%, 38%, .5);
+        width: 250px;
+        height: 250px;
+        filter: blur(150px);
+    }
+
+    .blurred-item-2 {
+        z-index: -1;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background: hsla(239, 100%, 50%, .5);
+        width: 250px;
+        height: 250px;
+        filter: blur(150px);
+    }
 }
