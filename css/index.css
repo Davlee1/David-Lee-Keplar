@@ -181,7 +181,7 @@ h3 {
 }
 
 .Projects-block {
-    background: hsla(249, 40%, 47%, .8);
+    background: hsl(249 40% 47%/ .8);
     padding: 10px 40px 10px;
     margin: 10px;
     border-radius: 5px;
@@ -212,6 +212,14 @@ h3 {
     padding: 20px;
     margin: auto;
 
+}
+
+.copyright{
+    color:  hsl(0 0% 100% / .75);
+    font-weight: 100;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: right;
 }
 
 /*foreground items*/
