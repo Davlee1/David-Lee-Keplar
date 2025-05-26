@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Faculty+Glyphic&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Major+Mono+Display&display=swap');
-
+/*making the css document as desktop first by default*/
 html {
     background: hsl(254 45% 11%);
     color: hsl(255 51.7% 94.5%);
@@ -28,7 +28,7 @@ a {
     color: hsl(255 51.7% 94.5%);
 }
 
-ul {
+li {
     list-style-type: none;
 }
 
@@ -109,11 +109,9 @@ h3 {
     margin: auto;
     width: 90%;
     padding: 10px 50px 10px;
-
-
 }
 
-#Skills {
+#skills {
     margin: auto;
     width: 65%;
     padding: 10px 50px 0px;
@@ -214,8 +212,8 @@ h3 {
 
 }
 
-.copyright{
-    color:  hsl(0 0% 100% / .75);
+.copyright {
+    color: hsl(0 0% 100% / .75);
     font-weight: 100;
     font-size: 20px;
     padding: 5px 10px;
@@ -263,7 +261,7 @@ h3 {
         /*plan to have a dropdown menu that changes the navlink class*/
     }
 
-section {
+    section {
         scroll-margin-top: 70px;
         max-width: 100%;
         padding: 0px;
@@ -351,15 +349,16 @@ section {
 /* ============================Tablet[portrait] adjustments==============================================*/
 @media (max-width:900px) {
 
-    h1{
+    h1 {
         text-align: center;
     }
 
-        .navlink {
+    .navlink {
         display: none;
         /*plan to have a dropdown menu that changes the navlink class*/
     }
-        .content {
+
+    .content {
         padding: 5px;
         width: 90%;
         margin: 80px auto 0px;
@@ -371,23 +370,26 @@ section {
         padding: 0px;
         margin: auto;
     }
-        #Experience {
+
+    #Experience {
         padding: 10px;
     }
-        .experience-container {
+
+    .experience-container {
         padding: 0px;
         width: 100%;
         justify-content: center;
         margin: auto;
     }
 
-        .skills-container {
+    .skills-container {
         justify-content: center;
         width: 50%;
         padding: 0px;
         margin: auto;
     }
-        .About-content {
+
+    .About-content {
         text-indent: 40px;
         width: 100%;
         padding: 0px auto 0px;
