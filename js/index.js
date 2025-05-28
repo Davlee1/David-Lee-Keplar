@@ -11,11 +11,10 @@ copyright.innerHTML = "<p class= 'copyright'>David Lee " + thisYear + ' \u{00A9}
 footerElement.appendChild(copyright);
 
 let skills = [ "HTML", "CSS", "JavaScript", "C#", "SQL", "PHP", "Verilog", "Haskell", "GitHub"];
-let skillsSection = document.querySelector(".skills-container");
+let skillsSection = document.getElementById("skills");
+let skillsList = skillsSection.querySelector("ul");
 for (let i = 0; i < skills.length; i++){
     let skill = document.createElement("li");
     skill.innerHTML = '<li class="skills-block">'+ skills[i] +'</li>';
-    skillsSection.appendChild(skill);
+    skillsList.appendChild(skill);
 }
-
-
