@@ -12,7 +12,7 @@ html {
 }
 
 section {
-    scroll-margin-top: 85px;
+    scroll-margin-top: 77px;
 }
 
 p {
@@ -60,7 +60,7 @@ li {
     font-size: 33px;
     text-decoration: none;
     color: hsl(255 51.7% 94.5%);
-    padding: 0px 10px 0px 120px;
+    padding: 0px 20px 0px 20px;
 }
 
 
@@ -70,6 +70,7 @@ h1 {
     font-weight: 400;
     font-size: 40px;
     margin: 0px;
+    padding: 0px 40px 0px 0px;
 }
 
 h2 {
@@ -211,6 +212,28 @@ h3 {
     margin: auto;
 
 }
+
+form[name="leave_message"]{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 25px 0px;
+    margin: auto;
+    
+    
+}
+.form-Element{
+    
+    /*color: hsl(0 0% 100%);*/
+    padding: 10px 10px 10px;
+    /*border-radius: 10px;*/
+    border: 2px solid hsla(249 40% 70% / .5);;
+    font-size: 20px;
+    font-weight: 100;
+    text-indent: 0px;
+}
+
 
 .copyright {
     color: hsl(0 0% 100% / .75);

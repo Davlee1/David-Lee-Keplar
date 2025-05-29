@@ -17,9 +17,10 @@
       <h1>David Lee</h1>
       <a class="navlink" href="#About">About</a>
       <a class="navlink" href="#Experience">Experience</a>
-      <a class="navlink" href="#Skills">Skills</a>
+      <a class="navlink" href="#skills">Skills</a>
       <a class="navlink" href="#Projects">Projects</a>
       <a class="navlink" href="#Connect">Connect</a>
+      <a class="navlink" href="#Leave-a-Message">Leave a Message</a>
     </nav>
   </header>
 
@@ -126,11 +127,39 @@
     </ul>
   </section>
 
+  <section id="Leave-a-Message">
+    <h2>Leave a Message</h2>
+    <form name="leave_message">
+      <label for="usersName" >Username:</label>
+      <input type="text" name="usersName" required="true" id="usersName" class="form-Element">
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="usersEmail" required="true" id="email" class="form-Element">
+      <br>
+
+      <label for="message"></label>
+      <textarea name="usersMessage" required="true" id="message" placeholder="Write a message here!" class="form-Element"></textarea>
+      <br>
+
+      <label for="submit"></label>
+      <button type="submit" id="submit" class="form-Element">Submit</button>
+    </form>
+  </section>
+
+  <section id="Messages">
+    <h2>Messages</h2>
+    <ul>
+
+    </ul>
+  </section>
+
   <div class="blurred-item-1"></div>
   <div class="blurred-item-2"></div>
 
-  <script src="js/index.js"></script>
+  
 
 </body>
+<script type="text/javascript" src="js/index.js"></script>
 
 </html>
