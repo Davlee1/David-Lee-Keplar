@@ -62,6 +62,10 @@ li {
     color: hsl(255 51.7% 94.5%);
     padding: 0px 20px 0px 20px;
 }
+.icon {
+  color: white;
+  display: none;
+}
 
 
 h1 {
@@ -128,7 +132,6 @@ h3 {
     padding: 10px 50px 0px;
     font-size: 20px;
     align-content: center;
-
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -176,20 +179,17 @@ h3 {
     display: grid;
     grid-template-columns: auto;
     text-align: center;
+    width: 90%;
     padding: 10px 50px 0px;
     margin: auto;
-    width: 70%;
 }
 
 .Projects-block {
-    background: hsl(249 40% 47%/ .8);
-    padding: 10px 40px 10px;
-    margin: 10px;
+    background: hsla(249, 40%, 47%, .8);
+    padding: 10px;
+    margin: 5px;
     border-radius: 5px;
-    text-align: justify;
-    font-size: 20px;
-    font-weight: 100;
-    text-indent: 0px;
+    text-align: center;
 }
 
 #Connect {
@@ -293,6 +293,16 @@ form[name="leave_message"]{
         /*plan to have a dropdown menu that changes the navlink class*/
     }
 
+    .icon {
+    display: block;
+    color: white;
+    padding: 0px;
+    font-size: 2rem;
+    position: fixed;
+    right: 0px;
+    top: -18px;
+  }
+
     section {
         scroll-margin-top: 70px;
         max-width: 100%;
@@ -389,6 +399,15 @@ form[name="leave_message"]{
         display: none;
         /*plan to have a dropdown menu that changes the navlink class*/
     }
+    .icon {
+    display: block;
+    color: white;
+    padding: 0px;
+    font-size: 2rem;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+  }
 
     .content {
         padding: 5px;
