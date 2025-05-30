@@ -73,6 +73,8 @@ h1 {
     padding: 0px 40px 0px 0px;
 }
 
+
+
 h2 {
     text-align: center;
     color: hsl(255 51.7% 94.5%);
@@ -228,7 +230,7 @@ form[name="leave_message"]{
     /*color: hsl(0 0% 100%);*/
     padding: 10px 10px 10px;
     margin: 10px;
-    /*border-radius: 10px;*/
+    border-radius: 10px;
     border: 2px solid hsla(249 40% 70% / .5);
     font-size: 20px;
     font-weight: 100;
@@ -242,6 +244,12 @@ form[name="leave_message"]{
     font-size: 20px;
     padding: 5px 10px;
     text-align: right;
+}
+.remove{
+    background: hsl(343 100% 61%/ 0.8);
+    color: hsl(0 0% 100% / .75);
+    margin: 10px;
+    border-radius: 10px;
 }
 
 /*foreground items*/
