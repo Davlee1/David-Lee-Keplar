@@ -58,7 +58,7 @@ const hideTheseProjects = ['Davlee1', 'Kotlin-tutorials', 'DavidLee.github.io'];
 fetch('https://api.github.com/users/Davlee1/repos')
     .then(response => {
         if (!response.ok) {
-            throw new Error('Request failed');
+            throw new Error('failed to load data');
         }
         return response.json();
     })
@@ -76,4 +76,7 @@ fetch('https://api.github.com/users/Davlee1/repos')
     })
     .catch(error => {
         console.error('An error occurred:', error);
+        let errorMessage = document.createElement("li");
+        errorMessage.innerHTML = "An error occurred: " + error;
+        projectList.appendChild(errorMessage);
     });
