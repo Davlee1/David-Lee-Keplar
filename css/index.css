@@ -210,9 +210,10 @@ h3 {
 .Projects-container {
     display: grid;
     grid-template-columns: auto;
+    align-content: center;
     text-align: center;
     width: 90%;
-    padding: 10px 50px 0px;
+    padding: 10px 0px 0px;
     margin: auto;
 }
 
