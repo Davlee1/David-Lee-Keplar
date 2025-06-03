@@ -9,7 +9,7 @@ function dropdown_Switch() {
     navlist.classList.toggle("show");
 }
 
-//hides message section if theres no messages
+
 
 
 
