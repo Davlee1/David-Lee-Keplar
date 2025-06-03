@@ -16,14 +16,17 @@
   <header>
     <nav id="navbar">
       <h1>David Lee</h1>
-      <a href="javascript:void(0);" class="icon" onclick="navList_Switch()">
-      <i class="fa-solid fa-bars"></i></a>
+      <i id="hamburger" class="fa-solid fa-bars icon"></i>
+
+      <div id="dropdown">
       <a class="navlink" href="#About">About</a>
       <a class="navlink" href="#Experience">Experience</a>
       <a class="navlink" href="#skills">Skills</a>
       <a class="navlink" href="#Projects">Projects</a>
       <a class="navlink" href="#Connect">Connect</a>
       <a class="navlink" href="#Leave-a-Message">Leave a Message</a>
+      </div>
+
     </nav>
   </header>
 
@@ -124,11 +127,10 @@
     </form>
   </section>
 
-  <section id="Messages">
+  <section id="Messages" class="hide">
     <h2>Messages</h2>
-    <ul>
-
-    </ul>
+    
+    <ul></ul>
   </section>
 
   <div class="blurred-item-1"></div>
