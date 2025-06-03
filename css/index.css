@@ -225,6 +225,10 @@ h3 {
     text-align: center;
 }
 
+.Projects-block:hover{
+    background: hsla(249, 40%, 60%, .8);
+}
+
 #Connect {
     padding: 20px 50px 0px;
     font-size: 20px;
@@ -268,6 +272,11 @@ form[name="leave_message"]{
     font-size: 20px;
     font-weight: 100;
     text-indent: 0px;
+}
+
+.form-Element:active {
+    background: hsl(249 100% 90%); 
+    transform: translateY(4px);
 }
 
 
