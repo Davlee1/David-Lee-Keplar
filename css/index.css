@@ -210,9 +210,10 @@ h3 {
 .Projects-container {
     display: grid;
     grid-template-columns: auto;
+    align-content: center;
     text-align: center;
     width: 90%;
-    padding: 10px 50px 0px;
+    padding: 10px 0px 0px;
     margin: auto;
 }
 
@@ -222,6 +223,10 @@ h3 {
     margin: 5px;
     border-radius: 5px;
     text-align: center;
+}
+
+.Projects-block:hover{
+    background: hsla(249, 40%, 60%, .8);
 }
 
 #Connect {
@@ -267,6 +272,11 @@ form[name="leave_message"]{
     font-size: 20px;
     font-weight: 100;
     text-indent: 0px;
+}
+
+.form-Element:active {
+    background: hsl(249 100% 90%); 
+    transform: translateY(4px);
 }
 
 
