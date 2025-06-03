@@ -30,7 +30,7 @@ messageForm.addEventListener("submit", function (event) {
     let email = event.target.email.value;
     let userMessage = event.target.usersMessage.value;
     console.log(username + email + userMessage);
-    
+
 
     //displaying messages
     let messageSection = document.getElementById("Messages");
@@ -40,6 +40,7 @@ messageForm.addEventListener("submit", function (event) {
 
     //remove button
     let removeButton = document.createElement("button");
+    removeButton.classList.add("remove");
     removeButton.innerHTML = "Remove";
     removeButton.addEventListener("click", function () {
         let entry = removeButton.parentNode;
@@ -49,3 +50,33 @@ messageForm.addEventListener("submit", function (event) {
     messageList.appendChild(newMessage);
     event.target.reset();
 })
+
+let projectSection = document.getElementById("Projects");
+let projectList = projectSection.querySelector("ul");
+const hideTheseProjects = ['Davlee1', 'Kotlin-tutorials', 'DavidLee.github.io'];
+
+fetch('https://api.github.com/users/Davlee1/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('failed to load data');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+        for (let i = 0; i < data.length; i++) {
+            if (!hideTheseProjects.includes(data[i].name)) //checks if the project name should be displayed
+            {
+                let project = document.createElement("li");
+                project.classList.add("Projects-block");
+                project.innerHTML = data[i].name;
+                projectList.appendChild(project);
+            }
+        }
+    })
+    .catch(error => {
+        console.error('An error occurred:', error);
+        let errorMessage = document.createElement("li");
+        errorMessage.innerHTML = "An error occurred: " + error;
+        projectList.appendChild(errorMessage);
+    });
