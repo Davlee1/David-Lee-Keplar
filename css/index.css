@@ -287,6 +287,27 @@ form[name="leave_message"] {
     border-radius: 10px;
 }
 
+.message-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 0px 0px 0px;
+    margin: auto;
+}
+
+.message-block {
+    background: hsla(249, 40%, 47%, .5);
+    padding: 10px 20px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.message-content{
+    text-align: justify;
+    text-indent: 70px;
+}
+
 /*foreground items*/
 .blurred-item-1 {
     z-index: -1;

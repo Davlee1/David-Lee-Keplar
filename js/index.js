@@ -44,7 +44,9 @@ messageForm.addEventListener("submit", function (event) {
     let messageSection = document.getElementById("Messages");
     let messageList = messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
-    newMessage.innerHTML = "<a href='mailto:" + email + "'>" + username + "</a><br><span>" + userMessage + "</span>";
+    newMessage.innerHTML = "<a href='mailto:" + email + "'>" + username + "</a><br><br><span class='message-content'>" + userMessage + "<br></span>";
+    newMessage.classList.add("message-block");
+    
     messageSection.classList.remove("hide");
 
     //remove button
