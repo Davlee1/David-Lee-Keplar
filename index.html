@@ -9,8 +9,6 @@
   <script src="https://kit.fontawesome.com/b7567ef832.js" crossorigin="anonymous"></script>
 </head>
 
-
-
 <body>
 
   <header>
@@ -19,12 +17,12 @@
       <i id="hamburger" class="fa-solid fa-bars icon"></i>
 
       <div id="dropdown">
-      <a class="navlink" href="#About" onclick="dropdown_Switch()">About</a>
-      <a class="navlink" href="#Experience" onclick="dropdown_Switch()">Experience</a>
-      <a class="navlink" href="#skills" onclick="dropdown_Switch()">Skills</a>
-      <a class="navlink" href="#Projects" onclick="dropdown_Switch()">Projects</a>
-      <a class="navlink" href="#Connect" onclick="dropdown_Switch()">Connect</a>
-      <a class="navlink" href="#Leave-a-Message" onclick="dropdown_Switch()">Leave a Message</a>
+        <a class="navlink" href="#About" onclick="dropdown_Switch()">About</a>
+        <a class="navlink" href="#Experience" onclick="dropdown_Switch()">Experience</a>
+        <a class="navlink" href="#skills" onclick="dropdown_Switch()">Skills</a>
+        <a class="navlink" href="#Projects" onclick="dropdown_Switch()">Projects</a>
+        <a class="navlink" href="#Connect" onclick="dropdown_Switch()">Connect</a>
+        <a class="navlink" href="#Leave-a-Message" onclick="dropdown_Switch()">Leave a Message</a>
       </div>
 
     </nav>
@@ -50,7 +48,6 @@
             - Learned a variety of programming languages with a focus in c#.<br><br>
             - Cooperated with other students to create various applications.<br><br>
             - Learned the fundamentals of software developement.</p>
-
         </li>
 
         <li class="experience-block">
@@ -60,7 +57,6 @@
             -Worked in a team to provide quality Customer service for over 100 different ISPs.<br><br>
             -Troubleshot a wide variety of networking and internet connectivity issues.<br><br>
             -Learned over 50 different customer management systems.</p>
-
         </li>
 
         <li class="experience-block">
@@ -70,16 +66,13 @@
             -Applied a diverse array of chemical treatments to improve grass health of client's lawns<br><br>
             -Identified a plethora of different grass types and weeds, and applied the appropriate treatment.<br><br>
             -Educated clients on the science and benefits of the chemical treatments they received.</p>
-
         </li>
-
       </ul>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul class="skills-container">
-
       </ul>
     </section>
 
@@ -89,18 +82,17 @@
       </ul>
     </section>
   </div>
+
   <section id="Connect">
     <h2>Connect</h2>
     <ul class="connect-container">
       <li class="connect-block"><a href="https://github.com/Davlee1">
-          <img src="images\github.png" alt="Github" width=140 height=auto>
-        </a>
+          <img src="images/github.png" alt="Github" id="GithubIcon"></a>
       </li>
 
       <li class="connect-block"><a href="https://www.linkedin.com/in/david-lee-417382220">
-          <img src="images\linkedIn.png" alt="LinkedIn" width=130 height=auto>
-        </a></li>
-
+          <img src="images/linkedIn.png" alt="LinkedIn" id="LinkedInIcon"></a>
+      </li>
     </ul>
   </section>
 
@@ -108,20 +100,17 @@
     <h2>Leave a Message</h2>
     <form name="leave_message">
       <label for="usersName">Username:</label>
-      <input type="text" name="usersName" required="true" id="usersName" class="form-Element">
+      <input type="text" name="usersName" id="usersName" class="form-Element" required>
       <br>
-
 
       <label for="email">Email:</label>
-      <input type="email" name="usersEmail" required="true" id="email" class="form-Element">
+      <input type="email" name="usersEmail" id="email" class="form-Element" required>
       <br>
-
 
       <label for="message">Message:</label>
-      <textarea name="usersMessage" required="true" id="message" placeholder="Write a message here!"
-        class="form-Element"></textarea>
+      <textarea name="usersMessage" id="message" placeholder="Write a message here!" class="form-Element"
+        required></textarea>
       <br>
-
 
       <button type="submit" id="submit" class="form-Element">Submit</button><br>
     </form>
@@ -129,16 +118,13 @@
 
   <section id="Messages" class="hide">
     <h2>Messages</h2>
-    
     <ul></ul>
   </section>
 
   <div class="blurred-item-1"></div>
   <div class="blurred-item-2"></div>
 
-
-
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
-<script type="text/javascript" src="js/index.js"></script>
 
 </html>
