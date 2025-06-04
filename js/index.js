@@ -1,18 +1,11 @@
-//hamburger menu
 
-// Get the button, and when the user clicks on it, execute dropdown_Switch
+
+// hamburger menu
 document.getElementById("hamburger").onclick = function () { dropdown_Switch() };
-
-//toggles class that changes display property
 function dropdown_Switch() {
     let navlist = document.getElementById("dropdown");
     navlist.classList.toggle("show");
 }
-
-
-
-
-
 
 //adding footer
 const body = document.querySelector("body");
@@ -40,14 +33,12 @@ for (let i = 0; i < skills.length; i++) {
 let messageForm = document.querySelector("form[name='leave_message']");
 messageForm.addEventListener("submit", function (event) {
 
-
     //reading inputs
     event.preventDefault();
     let username = event.target.usersName.value;
     let email = event.target.email.value;
     let userMessage = event.target.usersMessage.value;
     console.log(username + email + userMessage);
-
 
     //displaying messages
     let messageSection = document.getElementById("Messages");
@@ -63,9 +54,9 @@ messageForm.addEventListener("submit", function (event) {
     removeButton.addEventListener("click", function () {
         let entry = removeButton.parentNode;
         entry.remove();
-        
-        if(!messageSection.querySelector("ul").firstChild){
-        messageSection.classList.add("hide");
+        //checks messages section and hides if it is empty
+        if (!messageSection.querySelector("ul").firstChild) {
+            messageSection.classList.add("hide");
         }
     })
     newMessage.appendChild(removeButton);
@@ -73,10 +64,7 @@ messageForm.addEventListener("submit", function (event) {
     event.target.reset();
 })
 
-        
-//document.getElementById("Messages").classList.add("hide");
-        
-
+//project fetching and displaying
 let projectSection = document.getElementById("Projects");
 let projectList = projectSection.querySelector("ul");
 const hideTheseProjects = ['Davlee1', 'Kotlin-tutorials', 'DavidLee.github.io'];
@@ -109,4 +97,3 @@ fetch('https://api.github.com/users/Davlee1/repos')
         errorMessage.innerHTML = "An error occurred: " + error;
         projectList.appendChild(errorMessage);
     });
-
